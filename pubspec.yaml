@@ -62,7 +62,33 @@ flutter:
     - assets/icons/
     - assets/translations/
     - assets/texts/
-    - assets/images/cars/
+    - assets/images/cars/audi/
+    - assets/images/cars/bentley/
+    - assets/images/cars/benz/
+    - assets/images/cars/bmw/
+    - assets/images/cars/cadillac/
+    - assets/images/cars/chevrolet/
+    - assets/images/cars/ferrari/
+    - assets/images/cars/ford/
+    - assets/images/cars/genesis/
+    - assets/images/cars/honda/
+    - assets/images/cars/hyundai/
+    - assets/images/cars/jeep/
+    - assets/images/cars/kia/
+    - assets/images/cars/lambo/
+    - assets/images/cars/landrover/
+    - assets/images/cars/maserati/
+    - assets/images/cars/maybach/
+    - assets/images/cars/mclaren/
+    - assets/images/cars/mini/
+    - assets/images/cars/porsche/
+    - assets/images/cars/rollsroyce/
+    - assets/images/cars/samsung/
+    - assets/images/cars/ssangyong/
+    - assets/images/cars/tesla/
+    - assets/images/cars/toyota/
+    - assets/images/cars/volkswagen/
+    - assets/images/cars/volvo/
     - assets/images/logo/
   # assets:
   #   - images/a_dot_burr.jpeg

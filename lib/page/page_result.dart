@@ -31,8 +31,14 @@ class _PageResultState extends State<PageResult> {
   double visibleFlag3 = 0;
   double visibleFlag4 = 0;
   double visibleFlag5 = 0;
+  double visibleFlag6 = 0;
+  double visibleFlag7 = 0;
+  double visibleFlag8 = 0;
+  double visibleFlag9 = 0;
   List<ModelCar> cars = [];
   ModelCar? selectedCar;
+
+  bool? noCar = false;
 
   int assets = 0;
   int grade = 0;
@@ -98,20 +104,40 @@ class _PageResultState extends State<PageResult> {
         visibleFlag1 = 1;
       });
     });
-    Future.delayed(Duration(milliseconds: 4000), () {
+    Future.delayed(Duration(milliseconds: 3500), () {
       setState(() {
         visibleFlag2 = 1;
       });
     });
-    Future.delayed(Duration(milliseconds: 5000), () {
+    Future.delayed(Duration(milliseconds: 4000), () {
       setState(() {
         visibleFlag3 = 1;
       });
     });
 
-    Future.delayed(Duration(milliseconds: 6000), () {
+    Future.delayed(Duration(milliseconds: 4500), () {
+      setState(() {
+        visibleFlag4 = 1;
+      });
+    });
+    Future.delayed(Duration(milliseconds: 5000), () {
       setState(() {
         visibleFlag5 = 1;
+      });
+    });
+    Future.delayed(Duration(milliseconds: 5500), () {
+      setState(() {
+        visibleFlag6 = 1;
+      });
+    });
+    Future.delayed(Duration(milliseconds: 6000), () {
+      setState(() {
+        visibleFlag7 = 1;
+      });
+    });
+    Future.delayed(Duration(milliseconds: 6500), () {
+      setState(() {
+        visibleFlag8 = 1;
       });
     });
     super.initState();
@@ -178,7 +204,9 @@ class _PageResultState extends State<PageResult> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      getAniText(),
+                      noCar == true
+                          ? Text('맞는 차가 엄써용😂', style: MTextStyles.bold18Black)
+                          : getAniText(),
                     ],
                   ),
                 );
@@ -198,46 +226,49 @@ class _PageResultState extends State<PageResult> {
         AnimatedOpacity(
           duration: Duration(milliseconds: 1500),
           opacity: visibleFlag2,
+          child: Text(selectedCar!.maker!, style: MTextStyles.bold18Black),
+        ),
+        SizedBox(height: 24),
+        AnimatedOpacity(
+          duration: Duration(milliseconds: 1500),
+          opacity: visibleFlag3,
           child: Text(selectedCar!.name!, style: MTextStyles.bold18Black),
         ),
         SizedBox(height: 24),
         AnimatedOpacity(
           duration: Duration(milliseconds: 1500),
-          opacity: visibleFlag2,
-          child: Text(LocaleKeys.price.tr(), style: MTextStyles.bold18Black),
-        ),
-        SizedBox(height: 24),
-        AnimatedOpacity(
-          duration: Duration(milliseconds: 1500),
-          opacity: visibleFlag2,
+          opacity: visibleFlag4,
           child: Text(ServiceStringUtils.won(selectedCar!.price!),
               style: MTextStyles.bold18Black),
         ),
         SizedBox(height: 24),
         AnimatedOpacity(
           duration: Duration(milliseconds: 1500),
-          opacity: visibleFlag1,
-          child: Image.asset('assets/images/logo/kia.png',
-              width: MediaQuery.of(context).size.width * 0.3),
+          opacity: visibleFlag5,
+          child: Image.asset(
+            selectedCar!.logoImage!,
+          ),
         ),
         SizedBox(height: 24),
         AnimatedOpacity(
           duration: Duration(milliseconds: 1500),
-          opacity: visibleFlag1,
-          child: Image.asset('assets/images/logo/kia.png',
-              width: MediaQuery.of(context).size.width * 0.6),
+          opacity: visibleFlag5,
+          child: Image.asset(
+            selectedCar!.carImage!,
+          ),
         ),
         SizedBox(height: 48),
         AnimatedOpacity(
           duration: Duration(milliseconds: 1500),
-          opacity: visibleFlag5,
+          opacity: visibleFlag6,
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               primary: Colors.teal, // This is what you need!
             ),
             child: Text(LocaleKeys.share.tr()),
             onPressed: () {
-              // Share.share();
+              Share.share(
+                  '나의 미래 차는 ${selectedCar!.maker!} // ${selectedCar!.name} // ${selectedCar!.price}만원 // "나의 미래 차는? 에서 확인하세요.');
             },
           ),
         ),
@@ -255,13 +286,13 @@ class _PageResultState extends State<PageResult> {
           cars[i].selected = true;
         }
       }
-    } else if (widget.results[0] == 0) {
+    } else if (widget.results[0] == 1) {
       for (int i = 0; i < cars.length; i++) {
         if (cars[i].price! < 12000 || cars[i].price! > 4000) {
           cars[i].selected = true;
         }
       }
-    } else if (widget.results[0] == 0) {
+    } else if (widget.results[0] == 2) {
       for (int i = 0; i < cars.length; i++) {
         if (cars[i].price! < 6000) {
           cars[i].selected = true;
@@ -332,7 +363,19 @@ class _PageResultState extends State<PageResult> {
         }
       }
     }
-    int index = Random().nextInt(cars.length);
-    selectedCar = cars[index];
+    List<ModelCar> filtered = [];
+
+    for (var element in cars) {
+      if (element.selected == true) {
+        filtered.add(element);
+      }
+    }
+
+    if (filtered.isEmpty) {
+      noCar = true;
+      return;
+    }
+    int index = Random().nextInt(filtered.length);
+    selectedCar = filtered[index];
   }
 }

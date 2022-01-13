@@ -57,7 +57,7 @@ class _PageSplashState extends State<PageSplash> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/logo/kia.png',
+                'assets/images/cars/bmw/7series.png',
                 width: size.width * 0.7,
               ),
               SizedBox(height: 50),

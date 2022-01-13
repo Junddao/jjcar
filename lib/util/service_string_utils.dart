@@ -19,9 +19,11 @@ class ServiceStringUtils {
   }
 
   static String won(int number) {
-    return NumberFormat('###,###,###,###').format(number).replaceAll(' ', '') +
-        ' ' +
-        LocaleKeys.won.tr();
+    String temp =
+        NumberFormat('###,###,###,###').format(number).replaceAll(' ', '') +
+            ' ' +
+            LocaleKeys.won.tr();
+    return temp;
   }
 
   static String bindingPhoneNumber(String number) {

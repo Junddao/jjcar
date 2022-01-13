@@ -23,8 +23,6 @@ class _PageHomeState extends State<PageHome> {
 
   List<int> results = [5, 5, 5, 5, 5, 5, 5];
 
-  List<int> selectedNums = [];
-
   bool isSelectedFirstYes = false;
   bool isSelectedFirstNo = false;
 
@@ -45,26 +43,7 @@ class _PageHomeState extends State<PageHome> {
   @override
   void initState() {
     _startTimer();
-    while (true) {
-      bool isExistSameNum = false;
-      int selectedNum = Random().nextInt(10);
-      if (selectedNums.isEmpty) {
-        selectedNums.add(selectedNum);
-      } else {
-        selectedNums.forEach((element) {
-          if (element == selectedNum) {
-            isExistSameNum = true;
-          }
-        });
-        if (isExistSameNum == false) {
-          selectedNums.add(selectedNum);
-        }
-      }
 
-      if (selectedNums.length == 3) {
-        break;
-      }
-    }
     super.initState();
   }
 
@@ -94,20 +73,20 @@ class _PageHomeState extends State<PageHome> {
         // physics: NeverScrollableScrollPhysics(),
         controller: _pageController,
         children: [
-          contentsPage(0, LocaleKeys.q0_c1, LocaleKeys.q0_c2, LocaleKeys.q0_c3,
-              LocaleKeys.q0_c4),
-          contentsPage(1, LocaleKeys.q1_c1, LocaleKeys.q1_c2, LocaleKeys.q1_c3,
-              LocaleKeys.q1_c4),
-          contentsPage(2, LocaleKeys.q2_c1, LocaleKeys.q2_c2, LocaleKeys.q2_c3,
-              LocaleKeys.q2_c4),
-          contentsPage(3, LocaleKeys.q3_c1, LocaleKeys.q3_c2, LocaleKeys.q3_c3,
-              LocaleKeys.q3_c4),
-          contentsPage(4, LocaleKeys.q4_c1, LocaleKeys.q4_c2, LocaleKeys.q4_c3,
-              LocaleKeys.q4_c4),
-          contentsPage(5, LocaleKeys.q5_c1, LocaleKeys.q5_c2, LocaleKeys.q5_c3,
-              LocaleKeys.q5_c4),
-          contentsPage(6, LocaleKeys.q6_c1, LocaleKeys.q6_c2, LocaleKeys.q6_c3,
-              LocaleKeys.q6_c4),
+          contentsPage(0, LocaleKeys.q0_c1.tr(), LocaleKeys.q0_c2.tr(),
+              LocaleKeys.q0_c3.tr(), LocaleKeys.q0_c4.tr()),
+          contentsPage(1, LocaleKeys.q1_c1.tr(), LocaleKeys.q1_c2.tr(),
+              LocaleKeys.q1_c3.tr(), LocaleKeys.q1_c4.tr()),
+          contentsPage(2, LocaleKeys.q2_c1.tr(), LocaleKeys.q2_c2.tr(),
+              LocaleKeys.q2_c3.tr(), LocaleKeys.q2_c4.tr()),
+          contentsPage(3, LocaleKeys.q3_c1.tr(), LocaleKeys.q3_c2.tr(),
+              LocaleKeys.q3_c3.tr(), LocaleKeys.q3_c4.tr()),
+          contentsPage(4, LocaleKeys.q4_c1.tr(), LocaleKeys.q4_c2.tr(),
+              LocaleKeys.q4_c3.tr(), LocaleKeys.q4_c4.tr()),
+          contentsPage(5, LocaleKeys.q5_c1.tr(), LocaleKeys.q5_c2.tr(),
+              LocaleKeys.q5_c3.tr(), LocaleKeys.q5_c4.tr()),
+          contentsPage(6, LocaleKeys.q6_c1.tr(), LocaleKeys.q6_c2.tr(),
+              LocaleKeys.q6_c3.tr(), LocaleKeys.q6_c4.tr()),
           lastPage(),
         ],
       ),
@@ -148,8 +127,8 @@ class _PageHomeState extends State<PageHome> {
                 ),
                 Expanded(
                   child: Center(
-                    child: Text(ModelQuestions.questions[selectedNums[index]],
-                        style: MTextStyles.bold14Black),
+                    child: Text(ModelQuestions.questions[index],
+                        style: MTextStyles.bold18Black),
                   ),
                   flex: 8,
                 ),
@@ -163,7 +142,7 @@ class _PageHomeState extends State<PageHome> {
                   selectedTextColor: Colors.white,
                   transitionType: TransitionType.BOTTOM_TO_TOP,
                   textStyle: GoogleFonts.nunito(
-                      fontSize: 16,
+                      fontSize: 14,
                       color: Colors.black,
                       fontWeight: FontWeight.w700),
                   borderRadius: 12,
@@ -194,7 +173,7 @@ class _PageHomeState extends State<PageHome> {
                   selectedTextColor: Colors.white,
                   transitionType: TransitionType.BOTTOM_TO_TOP,
                   textStyle: GoogleFonts.nunito(
-                      fontSize: 16,
+                      fontSize: 14,
                       color: Colors.black,
                       fontWeight: FontWeight.w700),
                   borderRadius: 12,
@@ -225,7 +204,7 @@ class _PageHomeState extends State<PageHome> {
                   selectedTextColor: Colors.white,
                   transitionType: TransitionType.BOTTOM_TO_TOP,
                   textStyle: GoogleFonts.nunito(
-                      fontSize: 16,
+                      fontSize: 14,
                       color: Colors.black,
                       fontWeight: FontWeight.w700),
                   borderRadius: 12,
@@ -256,7 +235,7 @@ class _PageHomeState extends State<PageHome> {
                   selectedTextColor: Colors.white,
                   transitionType: TransitionType.BOTTOM_TO_TOP,
                   textStyle: GoogleFonts.nunito(
-                      fontSize: 16,
+                      fontSize: 14,
                       color: Colors.black,
                       fontWeight: FontWeight.w700),
                   borderRadius: 12,
@@ -307,8 +286,6 @@ class _PageHomeState extends State<PageHome> {
               ),
             ),
           ),
-
-          // SizedBox(height: 24),
           InkWell(
             onTap: () {
               for (var element in results) {
@@ -318,13 +295,8 @@ class _PageHomeState extends State<PageHome> {
                   return;
                 }
               }
-              int count = 0;
-              for (var element in results) {
-                if (element == 0) {
-                  count = count + 1;
-                }
-              }
-              Navigator.of(context).pushNamed('PageResult', arguments: count);
+
+              Navigator.of(context).pushNamed('PageResult', arguments: results);
             },
             child: Container(
               width: double.infinity,

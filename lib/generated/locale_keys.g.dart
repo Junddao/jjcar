@@ -9,9 +9,9 @@ abstract class  LocaleKeys {
   static const q5 = 'q5';
   static const q6 = 'q6';
   static const confirm = 'confirm';
-  static const assets_message = 'assets_message';
+  static const car_message = 'car_message';
+  static const price = 'price';
   static const won = 'won';
-  static const result_message1 = 'result_message1';
   static const warning_message = 'warning_message';
   static const retry = 'retry';
   static const share = 'share';

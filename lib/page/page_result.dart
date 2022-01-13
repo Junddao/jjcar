@@ -5,18 +5,21 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:jjcar/generated/locale_keys.g.dart';
+import 'package:jjcar/model/model_car.dart';
 import 'package:jjcar/page/page_home.dart';
+import 'package:jjcar/provider/provider_car.dart';
 import 'package:jjcar/style/colors.dart';
 import 'package:jjcar/style/textstyles.dart';
 import 'package:jjcar/util/admob_service.dart';
 import 'package:jjcar/util/service_string_utils.dart';
+import 'package:provider/provider.dart';
 
 import 'package:share_plus/share_plus.dart';
 
 class PageResult extends StatefulWidget {
-  const PageResult({Key? key, required this.resultCounter}) : super(key: key);
+  const PageResult({Key? key, required this.results}) : super(key: key);
 
-  final int resultCounter;
+  final List<int> results;
 
   @override
   _PageResultState createState() => _PageResultState();
@@ -28,6 +31,8 @@ class _PageResultState extends State<PageResult> {
   double visibleFlag3 = 0;
   double visibleFlag4 = 0;
   double visibleFlag5 = 0;
+  List<ModelCar> cars = [];
+  ModelCar? selectedCar;
 
   int assets = 0;
   int grade = 0;
@@ -87,7 +92,7 @@ class _PageResultState extends State<PageResult> {
     _isLoading = Future.delayed(Duration(seconds: 2), () {
       return false;
     });
-    getMyAssets();
+    getResult();
     Future.delayed(Duration(milliseconds: 3000), () {
       setState(() {
         visibleFlag1 = 1;
@@ -186,22 +191,41 @@ class _PageResultState extends State<PageResult> {
         AnimatedOpacity(
           duration: Duration(milliseconds: 1500),
           opacity: visibleFlag1,
-          child: Text(LocaleKeys.assets_message.tr(),
-              style: MTextStyles.bold18Black),
+          child:
+              Text(LocaleKeys.car_message.tr(), style: MTextStyles.bold18Black),
         ),
         SizedBox(height: 24),
         AnimatedOpacity(
           duration: Duration(milliseconds: 1500),
           opacity: visibleFlag2,
-          child: Text(ServiceStringUtils.won(assets),
+          child: Text(selectedCar!.name!, style: MTextStyles.bold18Black),
+        ),
+        SizedBox(height: 24),
+        AnimatedOpacity(
+          duration: Duration(milliseconds: 1500),
+          opacity: visibleFlag2,
+          child: Text(LocaleKeys.price.tr(), style: MTextStyles.bold18Black),
+        ),
+        SizedBox(height: 24),
+        AnimatedOpacity(
+          duration: Duration(milliseconds: 1500),
+          opacity: visibleFlag2,
+          child: Text(ServiceStringUtils.won(selectedCar!.price!),
               style: MTextStyles.bold18Black),
         ),
         SizedBox(height: 24),
         AnimatedOpacity(
           duration: Duration(milliseconds: 1500),
-          opacity: visibleFlag3,
-          child: Text(LocaleKeys.result_message1.tr() + '$grade%',
-              style: MTextStyles.bold18Black),
+          opacity: visibleFlag1,
+          child: Image.asset('assets/images/logo/kia.png',
+              width: MediaQuery.of(context).size.width * 0.3),
+        ),
+        SizedBox(height: 24),
+        AnimatedOpacity(
+          duration: Duration(milliseconds: 1500),
+          opacity: visibleFlag1,
+          child: Image.asset('assets/images/logo/kia.png',
+              width: MediaQuery.of(context).size.width * 0.6),
         ),
         SizedBox(height: 48),
         AnimatedOpacity(
@@ -213,13 +237,7 @@ class _PageResultState extends State<PageResult> {
             ),
             child: Text(LocaleKeys.share.tr()),
             onPressed: () {
-              Share.share(LocaleKeys.assets_message.tr() +
-                  '$assets' +
-                  LocaleKeys.won +
-                  ' / ' +
-                  LocaleKeys.result_message1.tr() +
-                  '$grade%' +
-                  ' / ');
+              // Share.share();
             },
           ),
         ),
@@ -227,33 +245,94 @@ class _PageResultState extends State<PageResult> {
     );
   }
 
-  void getMyAssets() {
-    if (widget.resultCounter == 3) {
-      assets = Random().nextInt(9999) * 10000000;
-    } else if (widget.resultCounter == 2) {
-      assets = Random().nextInt(999) * 1000000;
-    } else if (widget.resultCounter == 1) {
-      assets = Random().nextInt(999) * 100000;
+  void getResult() {
+    cars = context.read<ProviderCar>().cars;
+
+    // 1번 문제 필터링
+    if (widget.results[0] == 0) {
+      for (int i = 0; i < cars.length; i++) {
+        if (cars[i].price! > 10000) {
+          cars[i].selected = true;
+        }
+      }
+    } else if (widget.results[0] == 0) {
+      for (int i = 0; i < cars.length; i++) {
+        if (cars[i].price! < 12000 || cars[i].price! > 4000) {
+          cars[i].selected = true;
+        }
+      }
+    } else if (widget.results[0] == 0) {
+      for (int i = 0; i < cars.length; i++) {
+        if (cars[i].price! < 6000) {
+          cars[i].selected = true;
+        }
+      }
     } else {
-      assets = Random().nextInt(999) * 10000;
+      for (int i = 0; i < cars.length; i++) {
+        if (cars[i].price! < 3000) {
+          cars[i].selected = true;
+        }
+      }
     }
 
-    if (assets > 3000000000) {
-      grade = 1;
-    } else if (assets > 1000000000 && assets <= 3000000000) {
-      grade = 5;
-    } else if (assets > 700000000 && assets <= 1000000000) {
-      grade = 15;
-    } else if (assets > 400000000 && assets <= 700000000) {
-      grade = 30;
-    } else if (assets > 100000000 && assets <= 400000000) {
-      grade = 50;
-    } else if (assets > 30000000 && assets <= 100000000) {
-      grade = 70;
-    } else if (assets > 30000000 && assets <= 30000000) {
-      grade = 90;
-    } else {
-      grade = 95;
+    // 2번 필터링
+    if (widget.results[1] == 0) {
+      for (int i = 0; i < cars.length; i++) {
+        if (cars[i].price! > 10000) {
+          cars[i].selected = true;
+        } else {
+          cars[i].selected = false;
+        }
+      }
     }
+    if (widget.results[1] == 1) {
+      for (int i = 0; i < cars.length; i++) {
+        if (cars[i].price! < 10000 || cars[i].price! > 4000) {
+          cars[i].selected = true;
+        }
+      }
+    }
+    if (widget.results[1] == 2) {
+      for (int i = 0; i < cars.length; i++) {
+        if (cars[i].price! < 6000) {
+          cars[i].selected = true;
+        }
+      }
+    } else {
+      for (int i = 0; i < cars.length; i++) {
+        if (cars[i].price! < 3000) {
+          cars[i].selected = true;
+        }
+      }
+    }
+
+    //3번 필터링
+    if (widget.results[2] == 0) {
+      for (int i = 0; i < cars.length; i++) {
+        if (cars[i].type! == 1 && cars[i].selected == true) {
+          cars[i].selected = false;
+        }
+      }
+    }
+
+    //4번 필터링
+    if (widget.results[3] == 2) {
+      for (int i = 0; i < cars.length; i++) {
+        if (cars[i].locale! == 1 && cars[i].selected == true) {
+          cars[i].selected = false;
+        }
+      }
+    }
+
+    // 5번 필터링
+    if (widget.results[4] == 1) {
+      for (int i = 0; i < cars.length; i++) {
+        if (cars[i].fuel! == 2 && cars[i].selected == true) {
+          cars[i].selected = false;
+        }
+      }
+    }
+    int index = Random().nextInt(cars.length);
+    selectedCar = cars[index];
   }
 }

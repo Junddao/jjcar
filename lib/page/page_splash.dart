@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:jjcar/provider/provider_car.dart';
 import 'package:provider/provider.dart';
 
 class PageSplash extends StatefulWidget {
@@ -26,10 +27,10 @@ class _PageSplashState extends State<PageSplash> {
   }
 
   Future<void> readConfigFile() async {
-    // final jobsJson = await rootBundle.loadString('assets/texts/jobs.json');
-    // print(jobsJson);
-    // final jobsObject = jsonDecode(jobsJson);
-    // context.read<ProviderCompany>().getModelCompany(jobsObject);
+    final jobsJson = await rootBundle.loadString('assets/texts/cars.json');
+    print(jobsJson);
+    final jobsObject = jsonDecode(jobsJson);
+    context.read<ProviderCar>().getCar(jobsObject);
 
     // final majorJson = await rootBundle.loadString('assets/texts/major.json');
     // print(majorJson);
@@ -56,12 +57,12 @@ class _PageSplashState extends State<PageSplash> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/money.png',
+                'assets/images/logo/kia.png',
                 width: size.width * 0.7,
               ),
               SizedBox(height: 50),
               Text(
-                '미래 나의 자산은?',
+                '미래 나의 차는?',
                 style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
               ),
             ],

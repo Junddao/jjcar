@@ -1,0 +1,1065 @@
+{
+  "cars": [
+    {
+      "maker": "현대",
+      "name": "싼타페",
+      "price": 4300,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/싼타페.png",
+      "locale": 1
+    },
+    {
+      "maker": "현대",
+      "name": "아반떼",
+      "price": 2700,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/아반떼.png",
+      "locale": 1
+    },
+    {
+      "maker": "현대",
+      "name": "그랜저",
+      "price": 4300,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/그랜저.png",
+      "locale": 1
+    },
+    {
+      "maker": "현대",
+      "name": "펠라세이드",
+      "price": 5500,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/펠라세이드.png",
+      "locale": 1
+    },
+    {
+      "maker": "현대",
+      "name": "베뉴",
+      "price": 2200,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/베뉴.png",
+      "locale": 1
+    },
+    {
+      "maker": "현대",
+      "name": "스타리아",
+      "price": 4400,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/스타리아.png",
+      "locale": 1
+    },
+    {
+      "maker": "현대",
+      "name": "투싼",
+      "price": 3600,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/투싼.png",
+      "locale": 1
+    },
+    {
+      "maker": "hyundai",
+      "name": "캐스퍼",
+      "price": 1900,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/캐스퍼.png",
+      "locale": 1
+    },
+    {
+      "maker": "현대",
+      "name": "쏘나타",
+      "price": 3600,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/쏘나타.png",
+      "locale": 1
+    },
+    {
+      "maker": "현대",
+      "name": "아이오닉5",
+      "price": 5700,
+      "fuel": 2,
+      "type": 2,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/아이오닉5.png",
+      "locale": 1
+    },
+    {
+      "maker": "현대",
+      "name": "코나",
+      "price": 2900,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/코나.png",
+      "locale": 1
+    },
+    {
+      "maker": "현대",
+      "name": "포터2",
+      "price": 4300,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/hyundai.png",
+      "carImage": "assets/images/cars/hyundai/포터2.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "니로EV",
+      "price": 4500,
+      "fuel": 2,
+      "type": 2,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/니로.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "레이",
+      "price": 1500,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/레이.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "모닝",
+      "price": 1500,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/모닝.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "모하비",
+      "price": 5800,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/모하비.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "봉고3",
+      "price": 2300,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/봉고3.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "셀토스",
+      "price": 2900,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/셀토스.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "스팅어",
+      "price": 5000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/스팅어.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "스포티지",
+      "price": 3700,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/스포티지.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "쏘렌토",
+      "price": 4200,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/쏘렌토.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "카니발 하이리무진",
+      "price": 8500,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/카니발.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "EV6",
+      "price": 7200,
+      "fuel": 2,
+      "type": 1,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/EV6.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "K3",
+      "price": 2400,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/K3.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "K5",
+      "price": 3100,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/K5.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "K8",
+      "price": 4500,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/K8.png",
+      "locale": 1
+    },
+    {
+      "maker": "기아",
+      "name": "K9",
+      "price": 7600,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/kia.png",
+      "carImage": "assets/images/cars/kia/K9.png",
+      "locale": 1
+    },
+    {
+      "maker": "제네시스",
+      "name": "g70",
+      "price": 4800,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/genesis.png",
+      "carImage": "assets/images/cars/genesis/g70.png",
+      "locale": 1
+    },
+    {
+      "maker": "제네시스",
+      "name": "g80",
+      "price": 6200,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/genesis.png",
+      "carImage": "assets/images/cars/genesis/g80.png",
+      "locale": 1
+    },
+    {
+      "maker": "제네시스",
+      "name": "g90",
+      "price": 9300,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/genesis.png",
+      "carImage": "assets/images/cars/genesis/g90.png",
+      "locale": 1
+    },
+    {
+      "maker": "제네시스",
+      "name": "gv60",
+      "price": 7000,
+      "fuel": 2,
+      "type": 2,
+      "logoImage": "assets/images/logo/genesis.png",
+      "carImage": "assets/images/cars/genesis/gv60.png",
+      "locale": 1
+    },
+    {
+      "maker": "제네시스",
+      "name": "gv70",
+      "price": 5700,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/genesis.png",
+      "carImage": "assets/images/cars/genesis/gv70.png",
+      "locale": 1
+    },
+    {
+      "maker": "제네시스",
+      "name": "qm6",
+      "price": 3900,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/genesis.png",
+      "carImage": "assets/images/cars/genesis/qm6.png",
+      "locale": 1
+    },
+    {
+      "maker": "르노삼성",
+      "name": "sm6",
+      "price": 3300,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/samsung.png",
+      "carImage": "assets/images/cars/samsung/sm6.png",
+      "locale": 1
+    },
+    {
+      "maker": "르노삼성",
+      "name": "xm3",
+      "price": 2600,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/samsung.png",
+      "carImage": "assets/images/cars/samsung/xm3.png",
+      "locale": 1
+    },
+    {
+      "maker": "쌍용",
+      "name": "렉스턴",
+      "price": 5000,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/ssangyong.png",
+      "carImage": "assets/images/cars/ssangyong/렉스턴.png",
+      "locale": 1
+    },
+    {
+      "maker": "쌍용",
+      "name": "렉스턴스포츠",
+      "price": 4000,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/ssangyong.png",
+      "carImage": "assets/images/cars/ssangyong/렉스턴스포츠.png",
+      "locale": 1
+    },
+    {
+      "maker": "쌍용",
+      "name": "코란도",
+      "price": 3200,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/ssangyong.png",
+      "carImage": "assets/images/cars/ssangyong/코란도.png",
+      "locale": 1
+    },
+    {
+      "maker": "쌍용",
+      "name": "티볼리",
+      "price": 2600,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/ssangyong.png",
+      "carImage": "assets/images/cars/ssangyong/티볼리.png",
+      "locale": 1
+    },
+    {
+      "maker": "폭스바겐",
+      "name": "골프",
+      "price": 3700,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/volkswagen.png",
+      "carImage": "assets/images/cars/volkswagen/골프.png",
+      "locale": 2
+    },
+    {
+      "maker": "폭스바겐",
+      "name": "아테온",
+      "price": 5400,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/volkswagen.png",
+      "carImage": "assets/images/cars/volkswagen/아테온.png",
+      "locale": 2
+    },
+    {
+      "maker": "폭스바겐",
+      "name": "제타",
+      "price": 3200,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/volkswagen.png",
+      "carImage": "assets/images/cars/volkswagen/제타.png",
+      "locale": 2
+    },
+    {
+      "maker": "폭스바겐",
+      "name": "투아렉",
+      "price": 9600,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/volkswagen.png",
+      "carImage": "assets/images/cars/volkswagen/투아렉.png",
+      "locale": 2
+    },
+    {
+      "maker": "폭스바겐",
+      "name": "티구안",
+      "price": 4500,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/volkswagen.png",
+      "carImage": "assets/images/cars/volkswagen/티구안.png",
+      "locale": 2
+    },
+    {
+      "maker": "폭스바겐",
+      "name": "티록",
+      "price": 3800,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/volkswagen.png",
+      "carImage": "assets/images/cars/volkswagen/티록.png",
+      "locale": 2
+    },
+    {
+      "maker": "폭스바겐",
+      "name": "파사트",
+      "price": 4900,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/volkswagen.png",
+      "carImage": "assets/images/cars/volkswagen/파사트.png",
+      "locale": 2
+    },
+    {
+      "maker": "벤츠",
+      "name": "CLS클래스",
+      "price": 13000,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/benz.png",
+      "carImage": "assets/images/cars/benz/CLS클래스.png",
+      "locale": 2
+    },
+    {
+      "maker": "벤츠",
+      "name": "A클래스",
+      "price": 5000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/benz.png",
+      "carImage": "assets/images/cars/benz/A클래스.png",
+      "locale": 2
+    },
+    {
+      "maker": "벤츠",
+      "name": "E클래스",
+      "price": 16000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/benz.png",
+      "carImage": "assets/images/cars/benz/E클래스.png",
+      "locale": 2
+    },
+    {
+      "maker": "벤츠",
+      "name": "EQA",
+      "price": 6700,
+      "fuel": 2,
+      "type": 2,
+      "logoImage": "assets/images/logo/benz.png",
+      "carImage": "assets/images/cars/benz/EQA.png",
+      "locale": 2
+    },
+    {
+      "maker": "벤츠",
+      "name": "G클래스",
+      "price": 23000,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/benz.png",
+      "carImage": "assets/images/cars/benz/G클래스.png",
+      "locale": 2
+    },
+    {
+      "maker": "벤츠",
+      "name": "GLB클래스",
+      "price": 6300,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/benz.png",
+      "carImage": "assets/images/cars/benz/GLB클래스.png",
+      "locale": 2
+    },
+    {
+      "maker": "벤츠",
+      "name": "GLC클래스",
+      "price": 8000,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/benz.png",
+      "carImage": "assets/images/cars/benz/GLC클래스.png",
+      "locale": 2
+    },
+    {
+      "maker": "벤츠",
+      "name": "GLE클래스",
+      "price": 18000,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/benz.png",
+      "carImage": "assets/images/cars/benz/GLE클래스.png",
+      "locale": 2
+    },
+    {
+      "maker": "벤츠",
+      "name": "S클래스",
+      "price": 23000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/benz.png",
+      "carImage": "assets/images/cars/benz/S클래스.png",
+      "locale": 2
+    },
+    {
+      "maker": "BMW",
+      "name": "3시리즈",
+      "price": 7600,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/bmw.png",
+      "carImage": "assets/images/cars/bmw/3시리즈.png",
+      "locale": 2
+    },
+    {
+      "maker": "BMW",
+      "name": "5시리즈",
+      "price": 11000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/bmw.png",
+      "carImage": "assets/images/cars/bmw/5시리즈.png",
+      "locale": 2
+    },
+    {
+      "maker": "BMW",
+      "name": "7시리즈",
+      "price": 23000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/bmw.png",
+      "carImage": "assets/images/cars/bmw/7시리즈.png",
+      "locale": 2
+    },
+    {
+      "maker": "BMW",
+      "name": "x3",
+      "price": 9300,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/bmw.png",
+      "carImage": "assets/images/cars/bmw/x3.png",
+      "locale": 2
+    },
+    {
+      "maker": "BMW",
+      "name": "x7",
+      "price": 16000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/bmw.png",
+      "carImage": "assets/images/cars/bmw/x7.png",
+      "locale": 2
+    },
+    {
+      "maker": "BMW",
+      "name": "x5",
+      "price": 12000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/bmw.png",
+      "carImage": "assets/images/cars/bmw/x5.png",
+      "locale": 2
+    },
+    {
+      "maker": "아우디",
+      "name": "a6",
+      "price": 7600,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/audi.png",
+      "carImage": "assets/images/cars/audi/a6.png",
+      "locale": 2
+    },
+    {
+      "maker": "아우디",
+      "name": "a7",
+      "price": 9800,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/audi.png",
+      "carImage": "assets/images/cars/audi/a7.png",
+      "locale": 2
+    },
+
+    {
+      "maker": "아우디",
+      "name": "etron",
+      "price": 15000,
+      "fuel": 2,
+      "type": 1,
+      "logoImage": "assets/images/logo/audi.png",
+      "carImage": "assets/images/cars/audi/etron.png",
+      "locale": 2
+    },
+    {
+      "maker": "아우디",
+      "name": "q5",
+      "price": 7000,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/audi.png",
+      "carImage": "assets/images/cars/audi/q5.png",
+      "locale": 2
+    },
+    {
+      "maker": "아우디",
+      "name": "q8",
+      "price": 11000,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/audi.png",
+      "carImage": "assets/images/cars/audi/q8.png",
+      "locale": 2
+    },
+    {
+      "maker": "아우디",
+      "name": "r8",
+      "price": 25000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/audi.png",
+      "carImage": "assets/images/cars/audi/r8.png",
+      "locale": 2
+    },
+    {
+      "maker": "토요타",
+      "name": "캠리",
+      "price": 4300,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/toyota.png",
+      "carImage": "assets/images/cars/toyota/캠리.png",
+      "locale": 2
+    },
+    {
+      "maker": "토요타",
+      "name": "라브4",
+      "price": 4600,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/toyota.png",
+      "carImage": "assets/images/cars/toyota/라브4.png",
+      "locale": 2
+    },
+    {
+      "maker": "토요타",
+      "name": "시에나",
+      "price": 6400,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/toyota.png",
+      "carImage": "assets/images/cars/toyota/시에나.png",
+      "locale": 2
+    },
+    {
+      "maker": "토요타",
+      "name": "프리우스",
+      "price": 3600,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/toyota.png",
+      "carImage": "assets/images/cars/toyota/프리우스.png",
+      "locale": 2
+    },
+    {
+      "maker": "혼다",
+      "name": "어코드",
+      "price": 25000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/honda.png",
+      "carImage": "assets/images/cars/honda/어코드.png",
+      "locale": 2
+    },
+    {
+      "maker": "볼보",
+      "name": "XC60",
+      "price": 8300,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/volvo.png",
+      "carImage": "assets/images/cars/volvo/XC60.png",
+      "locale": 2
+    },
+    {
+      "maker": "볼보",
+      "name": "XC90",
+      "price": 9200,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/volvo.png",
+      "carImage": "assets/images/cars/volvo/XC90.png",
+      "locale": 2
+    },
+    {
+      "maker": "볼보",
+      "name": "XC40",
+      "price": 5100,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/volvo.png",
+      "carImage": "assets/images/cars/volvo/XC40.png",
+      "locale": 2
+    },
+    {
+      "maker": "볼보",
+      "name": "S60",
+      "price": 5400,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/volvo.png",
+      "carImage": "assets/images/cars/volvo/S60.png",
+      "locale": 2
+    },
+    {
+      "maker": "볼보",
+      "name": "S90",
+      "price": 7200,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/volvo.png",
+      "carImage": "assets/images/cars/volvo/S90.png",
+      "locale": 2
+    },
+    {
+      "maker": "미니",
+      "name": "mini 컨트리맨",
+      "price": 4300,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/mini.png",
+      "carImage": "assets/images/cars/mini/mini.png",
+      "locale": 2
+    },
+    {
+      "maker": "랜드로버",
+      "name": "디스커버리",
+      "price": 11000,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/landrover.png",
+      "carImage": "assets/images/cars/landrover/디스커버리.png",
+      "locale": 2
+    },
+    {
+      "maker": "랜드로버",
+      "name": "레인지로버",
+      "price": 11000,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/landrover.png",
+      "carImage": "assets/images/cars/landrover/레인지로버.png",
+      "locale": 2
+    },
+    {
+      "maker": "포드",
+      "name": "머스탱",
+      "price": 6400,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/ford.png",
+      "carImage": "assets/images/cars/ford/머스탱.png",
+      "locale": 2
+    },
+    {
+      "maker": "포드",
+      "name": "익스플로러",
+      "price": 6700,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/ford.png",
+      "carImage": "assets/images/cars/ford/익스플로러.png",
+      "locale": 2
+    },
+    {
+      "maker": "쉐보레",
+      "name": "말리부",
+      "price": 3300,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/chevrolet.png",
+      "carImage": "assets/images/cars/chevrolet/말리부.png",
+      "locale": 2
+    },
+    {
+      "maker": "쉐보레",
+      "name": "스파크",
+      "price": 1400,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/chevrolet.png",
+      "carImage": "assets/images/cars/chevrolet/스파크.png",
+      "locale": 2
+    },
+    {
+      "maker": "쉐보레",
+      "name": "트랙스",
+      "price": 2300,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/chevrolet.png",
+      "carImage": "assets/images/cars/chevrolet/트랙스.png",
+      "locale": 2
+    },
+    {
+      "maker": "캐딜락",
+      "name": "에스컬레이드",
+      "price": 15000,
+      "fuel": 1,
+      "type": 2,
+      "logoImage": "assets/images/logo/cadillac.png",
+      "carImage": "assets/images/cars/cadillac/에스컬레이드.png",
+      "locale": 2
+    },
+    {
+      "maker": "캐딜락",
+      "name": "CT5",
+      "price": 5900,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/cadillac.png",
+      "carImage": "assets/images/cars/cadillac/CT5.png",
+      "locale": 2
+    },
+    {
+      "maker": "테슬라",
+      "name": "model 3",
+      "price": 8000,
+      "fuel": 2,
+      "type": 1,
+      "logoImage": "assets/images/logo/tesla.png",
+      "carImage": "assets/images/cars/tesla/model3.png",
+      "locale": 2
+    },
+    {
+      "maker": "테슬라",
+      "name": "model X",
+      "price": 15000,
+      "fuel": 2,
+      "type": 2,
+      "logoImage": "assets/images/logo/tesla.png",
+      "carImage": "assets/images/cars/tesla/modelx.png",
+      "locale": 2
+    },
+    {
+      "maker": "테슬라",
+      "name": "model S",
+      "price": 15000,
+      "fuel": 2,
+      "type": 1,
+      "logoImage": "assets/images/logo/tesla.png",
+      "carImage": "assets/images/cars/tesla/models.png",
+      "locale": 2
+    },
+    {
+      "maker": "테슬라",
+      "name": "model Y",
+      "price": 8500,
+      "fuel": 2,
+      "type": 1,
+      "logoImage": "assets/images/logo/tesla.png",
+      "carImage": "assets/images/cars/tesla/modely.png",
+      "locale": 2
+    },
+    {
+      "maker": "지프",
+      "name": "그랜드체로키",
+      "price": 8500,
+      "fuel": 2,
+      "type": 1,
+      "logoImage": "assets/images/logo/jeep.png",
+      "carImage": "assets/images/cars/jeep/그랜드체로키.png",
+      "locale": 2
+    },
+    {
+      "maker": "마세라티",
+      "name": "기블리",
+      "price": 18000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/maserati.png",
+      "carImage": "assets/images/cars/maserati/기블리.png",
+      "locale": 2
+    },
+    {
+      "maker": "포르쉐",
+      "name": "911",
+      "price": 21000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/porsche.png",
+      "carImage": "assets/images/cars/porsche/911.png",
+      "locale": 2
+    },
+    {
+      "maker": "포르쉐",
+      "name": "파나메라",
+      "price": 29000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/porsche.png",
+      "carImage": "assets/images/cars/porsche/파나메라.png",
+      "locale": 2
+    },
+    {
+      "maker": "포르쉐",
+      "name": "카이앤",
+      "price": 17000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/porsche.png",
+      "carImage": "assets/images/cars/porsche/카이앤.png",
+      "locale": 2
+    },
+    {
+      "maker": "람보르기니",
+      "name": "아벤타도르",
+      "price": 69000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/lambo.png",
+      "carImage": "assets/images/cars/lambo/아벤타도르.png",
+      "locale": 2
+    },
+    {
+      "maker": "람보르기니",
+      "name": "우루스",
+      "price": 25000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/lambo.png",
+      "carImage": "assets/images/cars/lambo/우루스.png",
+      "locale": 2
+    },
+    {
+      "maker": "페라리",
+      "name": "로마",
+      "price": 32000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/ferrari.png",
+      "carImage": "assets/images/cars/ferrari/로마.png",
+      "locale": 2
+    },
+    {
+      "maker": "페라리",
+      "name": "스파이더",
+      "price": 39000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/ferrari.png",
+      "carImage": "assets/images/cars/ferrari/스파이더.png",
+      "locale": 2
+    },
+    {
+      "maker": "맥라렌",
+      "name": "아투라",
+      "price": 29000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/mclaren.png",
+      "carImage": "assets/images/cars/mclaren/아투라.png",
+      "locale": 2
+    },
+    {
+      "maker": "마이바흐",
+      "name": "62",
+      "price": 85000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/maybach.png",
+      "carImage": "assets/images/cars/maybach/62.png",
+      "locale": 2
+    },
+    {
+      "maker": "롤스로이스",
+      "name": "고스트",
+      "price": 47000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/rollsroyce.png",
+      "carImage": "assets/images/cars/rollsroyce/고스트.png",
+      "locale": 2
+    },
+    {
+      "maker": "롤스로이스",
+      "name": "팬텀",
+      "price": 74000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/rollsroyce.png",
+      "carImage": "assets/images/cars/rollsroyce/고스트.png",
+      "locale": 2
+    },
+    {
+      "maker": "벤틀리",
+      "name": "컨티넨탈",
+      "price": 32000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/bentley.png",
+      "carImage": "assets/images/cars/bentley/컨티넨탈.png",
+      "locale": 2
+    },
+    {
+      "maker": "벤틀리",
+      "name": "플라잉스퍼",
+      "price": 33000,
+      "fuel": 1,
+      "type": 1,
+      "logoImage": "assets/images/logo/bentley.png",
+      "carImage": "assets/images/cars/bentley/플라잉스퍼.png",
+      "locale": 2
+    }
+  ]
+}

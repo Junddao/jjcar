@@ -26,8 +26,12 @@ class Routers {
         return CupertinoPageRoute(
           builder: (_) => Scaffold(
             body: Center(
+<<<<<<< HEAD
               child:
                   Text('${settings.name} 는 lib/route.dart에 정의 되지 않았습니다!123.'),
+=======
+              child: Text('${settings.name} 는 lib/route.dart에 정의 되지 않았습니다!.555'),
+>>>>>>> 77245df97f5ffe9014d6218b1654f0292ce9d74f
             ),
           ),
         );
